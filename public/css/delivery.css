@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+header {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  background: #1e1e1e;
+
+}
+
+html {
+  background-color: #282828;
+}
+
+.rectangle {
+  position: relative;
+  width: 1600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.group-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.virus-pc {
+  margin-left: 15px;
+  background-image: url(../img/Logo.png);
+  background-size: cover;
+  height: 116px;
+  width: 382px;
+}
+
+.login-registration {
+  -webkit-text-stroke: 0.5px #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.delivery {
+  -webkit-text-stroke: 0.5px #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.cart {
+  -webkit-text-stroke: 0.5px #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.models {
+  -webkit-text-stroke: 0.5px #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.fon2 {
+  background-color: #282828;
+  position: relative;
+  height: 100%;
+  width: auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.fot {
+  width: 1600px;
+  height: auto;
+  background: #1e1e1e;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  padding-top: 20px;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text5 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 40px;
+  gap: 5px;
+  margin-top: 5px;
+
+}
+
+.mod {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-weight: 600;
+
+}
+
+.optim {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+}
+
+.mosh {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+}
+
+.kast {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 40px;
+  margin-top: 5px;
+  gap: 5px;
+
+
+}
+
+.kon {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.nom {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.sp {
+  text-align: center;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 42px;
+}
+
+@media screen and (max-width: 1600px) {
+
+  .rectangle {
+    width: auto
+  }
+
+  .fot {
+    width: auto;
+  }
+
+  .onas {
+    width: auto;
+  }
+}
+
+
+.onas {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background: #289c00;
+  border-radius: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 1px 40px 10px 40px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  gap: 40px;
+}
+
+.tx1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
+}
+
+.nas {
+
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 20px;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+.line1 {
+  position: relative;
+  width: 280px;
+  border: 0.5px solid #ffffff;
+}
+
+.inf1 {
+
+  font-family: Montserrat;
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  flex-direction: column;
+  text-align: left;
+
+
+  color: #ffffff;
+}

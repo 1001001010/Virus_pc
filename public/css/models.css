@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  /* Высота контейнера поиска */
+}
+
+#search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #289c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #289c00;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #282828;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+header {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  background: #1e1e1e;
+
+}
+
+.fon2 {
+  background-color: #282828;
+  position: relative;
+  height: 100%;
+  width: auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.fot {
+  width: 1600px;
+  height: auto;
+  background: #1e1e1e;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  padding-top: 20px;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text5 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 40px;
+  gap: 5px;
+  margin-top: 5px;
+
+}
+
+.mod {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-weight: 600;
+
+}
+
+.optim {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mosh {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.kast {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 40px;
+  margin-top: 5px;
+  gap: 5px;
+
+
+}
+
+.kon {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.nom {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.rectangle {
+  position: relative;
+  width: 1600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.group-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.virus-pc {
+  margin-left: 15px;
+  background-image: url(../img/Logo.png);
+  background-size: cover;
+  height: 116px;
+  width: 382px;
+}
+
+.login-registration {
+  -webkit-text-stroke: 0.5px #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.delivery {
+  -webkit-text-stroke: 0.5px #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.cart {
+  -webkit-text-stroke: 0.5px #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.models {
+  -webkit-text-stroke: 0.5px #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+.main-container {
+  position: relative;
+  width: 1600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1600px) {
+  .main-container {
+    width: auto
+  }
+
+  .rectangle {
+    width: auto
+  }
+
+  .fot {
+    width: auto;
+  }
+}
+
+.kart {
+  position: relative;
+  width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+
+}
+
+.optimpc {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: auto;
+  background: #289c00;
+  border-radius: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 1px 40px 10px 40px;
+  margin-top: 50px;
+}
+
+.line {
+  width: 400px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.optimal-pc {
+  font-size: 42px;
+  line-height: 1px;
+}
+
+.universal-computers {
+  font-size: 16px;
+}
+
+.block1 {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  position: relative;
+  width: 480px;
+  height: auto;
+}
+
+.tri {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+
+}
+
+.position-relative {
+  width: 450px;
+  height: 450px;
+  background: url(../img/tovar1.png) no-repeat center;
+  background-size: cover;
+}
+
+.position-relative2 {
+  width: 450px;
+  height: 450px;
+  background: url(../img/tovar2.png) no-repeat center;
+  background-size: cover;
+}
+
+.position-relative3 {
+  width: 450px;
+  height: 450px;
+  background: url(../img/tovar3.png) no-repeat center;
+  background-size: cover;
+}
+
+.avg-fps {
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.product-teaser-fps-bar {
+  width: auto;
+  height: 3px;
+  background: rgba(41, 156, 0, 0.25);
+}
+
+.product-teaser-fps-bar-fill {
+  width: auto;
+  height: 3px;
+  border-bottom: 3px solid #289c00;
+}
+
+.dd {
+  text-decoration: none;
+}
+
+.pc-one {
+  font-size: 29px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 0px;
+  font-family: Montserrat;
+  text-decoration: none
+}
+
+.flex-row-a {
+  width: 181px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reviews {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400px;
+  font-family: Montserrat;
+}
+
+.stars {
+  margin: auto;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+}
+
+.price {
+  font-size: 18px;
+  line-height: 0px;
+  font-weight: 400px;
+}
+
+.add-to-cart {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 122.25px;
+  height: 32px;
+  background: #333333;
+  border: none;
+  gap: 7px;
+  padding-top: 3px;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.in-cart {
+  font-size: 13px;
+  line-height: 0px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Montserrat;
+}
+
+.svg {
+  width: 20px;
+  height: 20px;
+  background: url(../img/korzina.png)
+}
+
+.on-order {
+  color: #289c00;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 0px;
+  margin-bottom: 40px;
+}
+
+.gaming-platform {
+  width: auto;
+  color: #cccccc;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.desc1 {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: row;
+}
+
+.object {
+  color: #cccccc;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+}
+
+.svg-1 {
+  width: 20px;
+  height: 20px;
+  margin: auto 10px auto 10px;
+  background: url(../img/SVG1.png) no-repeat center;
+  background-size: cover;
+}
+
+.opis {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+
+}
+
+.svg-2 {
+  width: 20px;
+  height: 20px;
+  margin: auto 10px auto 10px;
+  background: url(../img/SVG2.png) no-repeat center;
+  background-size: cover;
+}
+
+.svg-3 {
+  width: 20px;
+  height: 20px;
+  margin: auto 10px auto 10px;
+  background: url(../img/SVG3.png) no-repeat center;
+  background-size: cover;
+}
+
+.svg-4 {
+  width: 20px;
+  height: 20px;
+  margin: auto 10px auto 10px;
+  background: url(../img/SVG4.png) no-repeat center;
+  background-size: cover;
+}
+
+.svg-5 {
+  width: 20px;
+  height: 20px;
+  margin: auto 10px auto 10px;
+  background: url(../img/SVG5.png) no-repeat center;
+  background-size: cover;
+}
+
+.svg-6 {
+  width: 20px;
+  height: 20px;
+  margin: auto 10px auto 10px;
+  background: url(../img/SVG6.png) no-repeat center;
+  background-size: cover;
+}
+
+.svg-7 {
+  width: 20px;
+  height: 20px;
+  margin: auto 10px auto 10px;
+  background: url(../img/SVG7.png) no-repeat center;
+  background-size: cover;
+}
+
+.svg-8 {
+  width: 20px;
+  height: 20px;
+  margin: auto 10px auto 10px;
+  background: url(../img/SVG8.png) no-repeat center;
+  background-size: cover;
+}
