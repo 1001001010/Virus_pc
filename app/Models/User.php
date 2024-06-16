@@ -16,6 +16,11 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    public function basket()
+    {
+        return $this->hasOne(Basket::class);
+    }
+    
     protected $fillable = [
         'name',
         'email',

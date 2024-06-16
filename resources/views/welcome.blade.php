@@ -9,13 +9,16 @@
         </div>
         <div class="tovar" id="model">
             <div class="kart-tovar1">
-                <button class="bt1" onclick="window.location.href='models.html'">Подробнее</button>
+                <button class="bt1"
+                    onclick="window.location.href='{{ route('category', ['category_link' => 'optimal_pc']) }}'">Подробнее</button>
             </div>
             <div class="kart-tovar2">
-                <button class="bt1" onclick="window.location.href='models.html'">Подробнее</button>
+                <button class="bt1"
+                    onclick="window.location.href='{{ route('category', ['category_link' => 'powerful_pc']) }}'">Подробнее</button>
             </div>
             <div class="kart-tovar3">
-                <button class="bt1" onclick="window.location.href='models.html'">Подробнее</button>
+                <button class="bt1"
+                    onclick="window.location.href='{{ route('category', ['category_link' => 'custom_pc']) }}'">Подробнее</button>
             </div>
         </div>
         <div class="onas">

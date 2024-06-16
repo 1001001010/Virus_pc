@@ -28,12 +28,24 @@ class MainController extends Controller
     }
     public function product($product_id)
     {
-    /**
-    * Отображение страницы продукта(Айди категории и айди продукта)
-    *
-    * Возвращаем отображение компонента delivery
-    */
+        /**
+        * Отображение страницы продукта(Айди категории и айди продукта)
+        *
+        * Возвращаем отображение компонента delivery
+        */
         $product = Product::findorFail($product_id);
         return view('product', ['product' => $product]);
+    }
+    public function search($category_id, Request $request)
+    {
+        /**
+        * Поиск по слову (HTTP-запос)
+        *
+        * Возвращаем отображение компонента category с результатами поиска
+        */
+        $word = $request->word;
+        $category = Category::find($category_id);
+        $result = Product::where('category_id', $category_id)->where('name', 'like', "%{$word}%")->orderBy('id')->get();
+        return view('search', ['category' => $category, 'result' => $result]);
     }
 }

@@ -13,6 +13,7 @@ Route::controller(App\Http\Controllers\MainController::class)->group(function ()
     Route::get('/', 'index')->name('index');
     Route::get('/delivery','delivery')->name('delivery');
     Route::get('/product/{product_id}','product')->name('product');
+    Route::post('/product/{category_id}/search', 'search')->name('search');
 });
 Route::controller(App\Http\Controllers\AdminController::class)->group(function () { 
     Route::get('/admin', 'index')->name('admin')->middleware([IsAdmin::class]);

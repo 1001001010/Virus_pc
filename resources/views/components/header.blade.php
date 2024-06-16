@@ -5,7 +5,7 @@
             <a href="{{ route('index') }}">
                 <div class="virus-pc"></div>
             </a>
-            <a class="models">Модели</a>
+            <a class="delivery" href="{{ route('category', ['category_link' => 'optimal_pc']) }}">Модели</a>
             <a class="delivery" href="{{ route('delivery') }}">Доставка</a>
             <a class="cart" href="crate.html">Корзина</a>
             @auth

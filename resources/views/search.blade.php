@@ -19,7 +19,7 @@
                 </br>для различных задач, включая игры, работу с документами и интернет-серфинг.</p>
         </div>
         <div class="tri">
-            @foreach ($category->products as $product)
+            @foreach ($result as $product)
                 <div class="block1">
                     <a href="{{ route('product', ['product_id' => $product->id]) }}">
                         <div class="position-relative"></div>

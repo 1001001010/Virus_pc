@@ -1,0 +1,303 @@
+@import url("headandfoot.css");
+
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.mod {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-weight: 600;
+
+}
+
+.optim {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mosh {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.kast {
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: #121212;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.silka {
+  margin-left: 50px;
+  font-weight: 600;
+  color: #999999;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.inviz {
+  width: 800px;
+  height: 800px;
+  background: url(../img/tovar1.png) no-repeat center;
+  background-size: cover;
+}
+
+.gr1 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: auto auto auto auto;
+  background-color: #121212 no-repeat center;
+  background-size: cover;
+}
+
+.txtgr1 {
+  margin-left: 20px;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.one {
+  color: #ffffff;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 52px;
+  line-height: 20px;
+}
+
+.flex1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.reviews {
+  height: 24px;
+  color: #999999;
+  line-height: 24px;
+}
+
+.star {
+  width: 25px;
+  height: 25px;
+  background: url(../img/star.png)
+}
+
+.game-platform {
+  color: #cccccc;
+  max-width: 750px;
+  min-width: 200px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.flex2 {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.price {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.butcorzin {
+  text-transform: uppercase;
+  width: 162px;
+  height: 50px;
+  background: #333333;
+  display: flex;
+  flex-direction: row;
+  border: none;
+}
+
+.add {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.corzin {
+  margin: auto 10px auto 10px;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background: url(../img/korzina.png) no-repeat center;
+  background-size: cover;
+}
+
+.flex3 {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.clock {
+  width: 40px;
+  height: 40px;
+  background: url(../img/clock.png) no-repeat center;
+  background-size: cover;
+}
+
+.time {
+  height: 21px;
+  color: #fba54d;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.pc {
+  margin: 30px auto auto auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.flex4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.geforceimage {
+  width: 780px;
+  height: 438px;
+  background: url(../img/videocard.png) no-repeat center;
+  background-size: cover;
+}
+
+.textgr2 {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 770px;
+  min-width: 300px;
+}
+
+.videocard {
+  color: #cccccc;
+  font-size: 24px;
+}
+
+.geforce {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.opis {
+  width: auto;
+  color: #cccccc;
+  line-height: 24px;
+}
+
+.flex5 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.geforceimage1 {
+  width: 780px;
+  height: 438px;
+  background: url(../img/CP.png) no-repeat center;
+  background-size: cover;
+}
+
+.geforceimage2 {
+  width: 780px;
+  height: 438px;
+  background: url(../img/mat.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.geforceimage3 {
+  width: 780px;
+  height: 438px;
+  background: url(../img/kul.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.geforceimage4 {
+  width: 780px;
+  height: 438px;
+  background: url(../img/cpy.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.geforceimage5 {
+  width: 780px;
+  height: 438px;
+  background: url(../img/adata.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.geforceimage6 {
+  width: 780px;
+  height: 438px;
+  background: url(../img/bp.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.geforceimage7 {
+  width: 780px;
+  height: 438px;
+  background: url(../img/kr.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.geforceimage8 {
+  width: 780px;
+  height: 438px;
+  background: url(../img/svet.png) no-repeat center;
+  background-size: cover;
+}

@@ -1,12 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+    <link rel="stylesheet" href="{{ asset('css/tovar.css') }}" />
     <div class="main-container">
         <p class="silka">Главная / Модели / {{ $product->name }}</p>
         <div class="gr1">
             <div class="inviz"></div>
             <div class="txtgr1">
-                <p class="one">ONE</p>
+                <p class="one">{{ $product->name }}</p>
                 <div class="flex1">
                     <div class="star"></div>
                     <div class="star"></div>
@@ -15,10 +16,9 @@
                     <div class="star"></div>
                     <p class="reviews">(5 отзывов)</p>
                 </div>
-                <p class="game-platform">Игровая платформа, построенная на базе процессора Intel® Core™ i5-12400(F)
-                    [до 4.4GHz, 6 ядер] и видеокарты Palit GeForce RTX 4060 Dual [8GB, 3072CUDA].</p>
+                <p class="game-platform">{{ $product->description }}</p>
                 <div class="flex2">
-                    <p class="price">Цена 116 300 ₽</p>
+                    <p class="price">Цена {{ $product->price }} ₽</p>
                     <button class="butcorzin">
                         <div class="corzin"></div>
                         <p class="add">В корзину</p>
@@ -31,7 +31,7 @@
                 <div class="geforcepic"></div>
             </div>
         </div>
-        <p class="pc">Комплектация ONE</p>
+        <p class="pc">Комплектация {{ $product->name }}</p>
         <div class="flex4">
             <div class="geforceimage"></div>
             <div class="textgr2">
