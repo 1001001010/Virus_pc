@@ -16,10 +16,10 @@ class Product extends Model
         'category_id',
         'videocard',
         'processor',
-        'motherboard',
+        'otherboard',
         'cooling',
         'ram',
-        'ssd',
+        'sd',
         'power_supply',
         'case',
     ];
@@ -28,8 +28,8 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
-    public function basket() 
+    public function baskets() 
     {
-        return $this->belongsTo(Basket::class);
+        return $this->hasMany(Basket::class);
     }
 }

@@ -15,14 +15,15 @@
 
             <p class="optimal-pc">{{ $category->name }}</p>
             <div class="line"></div>
-            <p class="universal-computers">Оптимальные - универсальные компьютеры, которые могут использоваться
-                </br>для различных задач, включая игры, работу с документами и интернет-серфинг.</p>
+            <p class="universal-computers">{{ $category->description }}</p>
         </div>
         <div class="tri">
             @foreach ($category->products as $product)
                 <div class="block1">
                     <a href="{{ route('product', ['product_id' => $product->id]) }}">
-                        <div class="position-relative"></div>
+                        <div class="position-relative">
+                            <img src="{{ asset($product->photo) }}" alt="">
+                        </div>
                     </a>
                     <p class="avg-fps">AVG. FPS - 84</p>
                     <div class="product-teaser-fps-bar">

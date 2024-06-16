@@ -49,7 +49,7 @@ class AdminController extends Controller
             'description' => $request->description,
             'price' => $request->price,
             'category_id' => $request->category_id,
-            'photo' => 'torage/products/'. $name,
+            'photo' => 'storage/products/'. $name,
             'videocard' => $request->videocard,
             'processor' => $request->processor,
             'motherboard' => $request->motherboard,

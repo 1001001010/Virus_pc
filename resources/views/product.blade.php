@@ -5,7 +5,9 @@
     <div class="main-container">
         <p class="silka">Главная / Модели / {{ $product->name }}</p>
         <div class="gr1">
-            <div class="inviz"></div>
+            <div class="inviz">
+                <img src="{{ asset($product->photo) }}" alt="">
+            </div>
             <div class="txtgr1">
                 <p class="one">{{ $product->name }}</p>
                 <div class="flex1">
@@ -19,10 +21,17 @@
                 <p class="game-platform">{{ $product->description }}</p>
                 <div class="flex2">
                     <p class="price">Цена {{ $product->price }} ₽</p>
-                    <button class="butcorzin">
-                        <div class="corzin"></div>
-                        <p class="add">В корзину</p>
-                    </button>
+                    @if (isset($basket))
+                        <a class="butcorzin" href="{{ route('AddBasket', ['tovar_id' => $product->id]) }}">
+                            <div class="corzin"></div>
+                            <p class="add">В корзине</p>
+                        </a>
+                    @else
+                        <a class="butcorzin" href="{{ route('AddBasket', ['tovar_id' => $product->id]) }}">
+                            <div class="corzin"></div>
+                            <p class="add">В корзину</p>
+                        </a>
+                    @endif
                 </div>
                 <div class="flex3">
                     <div class="clock"></div>

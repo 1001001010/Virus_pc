@@ -74,8 +74,13 @@ button {
 .inviz {
   width: 800px;
   height: 800px;
-  background: url(../img/tovar1.png) no-repeat center;
-  background-size: cover;
+  /* background: url(../img/tovar1.png) no-repeat center;
+  background-size: cover; */
+}
+
+.inviz img {
+  width: 100%;
+  height: 100%;
 }
 
 .gr1 {

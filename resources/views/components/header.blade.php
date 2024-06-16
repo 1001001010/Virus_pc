@@ -7,7 +7,7 @@
             </a>
             <a class="delivery" href="{{ route('category', ['category_link' => 'optimal_pc']) }}">Модели</a>
             <a class="delivery" href="{{ route('delivery') }}">Доставка</a>
-            <a class="cart" href="crate.html">Корзина</a>
+            <a class="cart" href="{{ route('Basket') }}">Корзина</a>
             @auth
                 <a class="login-registration" href="{{ route('profile') }}">Личный кабинет</a>
             @else
