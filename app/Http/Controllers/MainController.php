@@ -55,6 +55,11 @@ class MainController extends Controller
     }
     public function add_basket($tovar_id)
     {
+        /**
+        * Добавление товара в корзину (айди товара)
+        *
+        * Возвращаем отображение предыдущего компонента
+        */
         $status = Basket::where('user_id', Auth::user()->id)->where('product_id', $tovar_id)->first();
         if ($status) {
             Basket::where('id', $status->id)->delete();
@@ -71,6 +76,11 @@ class MainController extends Controller
     }
     public function basket_open()
     {
+        /**
+        * Открытие корзины
+        *
+        * Возвращаем отображение компонента basket (информания о корзине)
+        */
         $baskets = Basket::where('user_id', Auth::user()->id)
             ->with('product') // eager load the product relationship
             ->get();
@@ -78,6 +88,11 @@ class MainController extends Controller
     }
     public function edit_quatity($product_id, $status)
     {
+        /**
+        * Изменение кол-ва товара в корзине (Айди продукта и статус{+ или -})
+        *
+        * Возвращаем отображение компонента basket
+        */
         if ($status == 'plus') {
             Basket::where('id', $product_id)->update(['quantity' => DB::raw('quantity + 1')]);
         } elseif ($status == 'minus') {
@@ -89,11 +104,21 @@ class MainController extends Controller
         return redirect(route('Basket'));
     }
     public function delete_basket($position_id) {
+        /**
+        * Удаление товара из корзины
+        *
+        * Возвращаем роут Basket
+        */
         Basket::where('id', $position_id)->delete();
         return redirect(route('Basket'));
     }
     public function add_order()
     {
+         /**
+        * Оформление товара из корзины
+        *
+        * Возвращаем роут profile
+        */
         $basket_items = Basket::where('user_id', Auth::user()->id)->get();
         foreach ($basket_items as $item) {
             for ($i = 0; $i < $item->quantity; $i++) {
