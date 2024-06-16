@@ -18,6 +18,7 @@ Route::controller(App\Http\Controllers\MainController::class)->group(function ()
     Route::get('/basket', 'basket_open')->name('Basket')->middleware(['auth']);
     Route::get('/editquatity/{product_id}/{status}', 'edit_quatity')->name('EditQuantity')->middleware(['auth']);
     Route::get('/basket/delete/{position_id}', 'delete_basket')->name('deleteBasket')->middleware(['auth']);
+    Route::get('/order', 'add_order')->name('AddOrder')->middleware(['auth']);
 });
 Route::controller(App\Http\Controllers\AdminController::class)->group(function () { 
     Route::get('/admin', 'index')->name('admin')->middleware([IsAdmin::class]);

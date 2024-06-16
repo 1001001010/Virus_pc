@@ -16,10 +16,10 @@ class Product extends Model
         'category_id',
         'videocard',
         'processor',
-        'otherboard',
+        'motherboard',
         'cooling',
         'ram',
-        'sd',
+        'ssd',
         'power_supply',
         'case',
     ];

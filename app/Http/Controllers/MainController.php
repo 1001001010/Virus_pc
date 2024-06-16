@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\Order;
 use App\Models\Product;
 use App\Models\Basket;
 use Auth;
@@ -90,5 +91,20 @@ class MainController extends Controller
     public function delete_basket($position_id) {
         Basket::where('id', $position_id)->delete();
         return redirect(route('Basket'));
+    }
+    public function add_order()
+    {
+        $basket_items = Basket::where('user_id', Auth::user()->id)->get();
+        foreach ($basket_items as $item) {
+            for ($i = 0; $i < $item->quantity; $i++) {
+                Order::create([
+                    'user_id' => $item->user_id,
+                    'product_id' => $item->product_id,
+                ]);
+            }
+        }
+        // Очищаем корзину для пользователя
+        Basket::where('user_id', Auth::user()->id)->delete();
+        return redirect('profile');
     }
 }

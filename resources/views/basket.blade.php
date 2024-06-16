@@ -47,9 +47,9 @@
                     </div>
                 @endforeach
             </div>
-            <button class="oform" type="button">
+            <a class="oform" type="button" href="{{ route('AddOrder') }}">
                 Оформить
-            </button>
+            </a>
         </div>
     </div>
 @endsection
