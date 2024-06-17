@@ -9,6 +9,12 @@
         <div class="line"></div>
         <span class="login">Логин: {{ Auth::user()->name }}</span>
         <div class="line-2"></div>
-        <span class="name">Мои заказы:</span>
+        <button onclick="event.preventDefault();
+        document.getElementById('logout-form').submit();">
+            <span class="name">Выйти</span>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                @csrf
+            </form>
+        </button>
     </div>
 @endsection

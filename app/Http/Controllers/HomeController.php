@@ -27,11 +27,15 @@ class HomeController extends Controller
     public function category($category_link)
     {
         /**
-        * Отображение страницы категорий
-        *
-        * Возвращаем отображение компонента category
-        */
-        $category = Category::with('products')->where('link', $category_link)->firstOrFail();
+         * Отображение страницы категорий
+         *
+         * Возвращаем отображение компонента category
+         */
+        $category = Category::with(['products' => function ($query) {
+            $query->with(['baskets' => function ($query) {
+                $query->where('user_id', auth()->id());
+            }]);
+        }])->where('link', $category_link)->firstOrFail();
         return view('optimal', ['category' => $category]);
     }
 }

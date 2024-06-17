@@ -44,10 +44,21 @@
                         <p class="reviews">(5 отзывов)</p>
                     </div>
                     <p class="price">Цена {{ $product->price }} ₽</p>
-                    <button class="add-to-cart">
-                        <div class="svg"></div>
-                        <p class="in-cart">В корзину</p>
-                    </button>
+                    @if ($product->baskets->isNotEmpty())
+                        <a href="{{ route('AddBasket', ['tovar_id' => $product->id]) }}">
+                            <button class="add-to-cart">
+                                <div class="svg"></div>
+                                <p class="in-cart">В корзине</p>
+                            </button>
+                        </a>
+                    @else
+                        <a href="{{ route('AddBasket', ['tovar_id' => $product->id]) }}">
+                            <button class="add-to-cart">
+                                <div class="svg"></div>
+                                <p class="in-cart">В корзину</p>
+                            </button>
+                        </a>
+                    @endif
                     <p class="on-order">На заказ, сроки 6 - 9 дней</p>
                     <p class="gaming-platform">{{ $product->description }}</p>
                     <div class="desc1">
