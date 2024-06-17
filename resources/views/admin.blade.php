@@ -49,4 +49,16 @@
 
         <input type="submit" value="Создать">
     </form>
+    <hr>
+    <h3 class="product_list">Список товаров:</h3>
+    <div class="product">
+        @foreach ($products as $item)
+            <div class="tovar_block">
+                <img src="{{ asset($item->photo) }}" alt="" width="200px" height="200px">
+                <p><b>{{ $item->name }}</b></p>
+                <p><b>{{ $item->price }}</b></p>
+                <a href="{{ route('DeleteProduct', ['product_id' => $item->id]) }}"><button>Удалить</button></a>
+            </div>
+        @endforeach
+    </div>
 @endsection

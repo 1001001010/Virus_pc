@@ -23,4 +23,5 @@ Route::controller(App\Http\Controllers\MainController::class)->group(function ()
 Route::controller(App\Http\Controllers\AdminController::class)->group(function () { 
     Route::get('/admin', 'index')->name('admin')->middleware([IsAdmin::class]);
     Route::post('/admin/product/new', 'new_product')->name('AddProduct')->middleware([IsAdmin::class]);
+    Route::get('/admin/product/delete/{product_id}', 'del_product')->name('DeleteProduct')->middleware([IsAdmin::class]);
 });

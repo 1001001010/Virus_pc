@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Illuminate\Support\Facades\File;
 
 class AdminController extends Controller
 {
@@ -14,7 +15,7 @@ class AdminController extends Controller
         *
         * Возвращаем отображение компонента admin
         */
-        return view('admin');
+        return view('admin', ['products' => Product::get()]);
     }
     public function new_product(Request $request)
     {
@@ -61,6 +62,20 @@ class AdminController extends Controller
         ];
         Product::create($data);
 
+        return redirect()->back();
+    }
+    public function del_product($product_id)
+    {
+        /**
+        * Удаление товара (Айди товара)
+        *
+        * return предыдущая страница
+        */
+        $position = Product::where('id', $product_id)->first();
+        if ($position->photo) {
+            File::delete(public_path($position->photo));
+        }
+        Product::where('id', $product_id)->delete();
         return redirect()->back();
     }
 }
